@@ -1,17 +1,8 @@
 /*
- * main.c
- *
- *  Created on: Jul 4, 2021
- *      Author: Mohamed_ELkomy
+    Author: Wael Hassan
+    18/9/2024
  */
 
-
-/*
- * main.c
- *
- *  Created on: Jul 4, 2021
- *      Author: Mohamed_ELkomy
- */
 
 #include<stdio.h>
 #include"stdlib.h"

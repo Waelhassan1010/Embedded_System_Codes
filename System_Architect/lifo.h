@@ -1,9 +1,8 @@
 /*
- * lifo.h
- *
- *  Created on: Jul 4, 2021
- *      Author: Mohamed_ELkomy
+    Author: Wael Hassan
+    18/9/2024
  */
+
 #include<stdio.h>
 
 #ifndef LIFO_H_
