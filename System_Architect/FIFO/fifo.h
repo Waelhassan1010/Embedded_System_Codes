@@ -1,8 +1,5 @@
 /*
- * fifo.h
- *
- *  Created on: Jul 7, 2021
- *      Author: Mohamed_ELkomy
+ wael hassan
  */
 
 #ifndef FIFO_H_
