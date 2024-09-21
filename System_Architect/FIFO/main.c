@@ -9,7 +9,8 @@ wael hassan 21/9/2024
 elment_type buffer[length_buffer];
 void main()
 {
-	int i,temp=0;
+	int i;
+     uint8_t temp=0;
 	FIFO_buf_t uart;
 	if(FIFO_init(&uart,buffer,length_buffer)==FIFO_no_error)
 		printf("===the init is done\n");
