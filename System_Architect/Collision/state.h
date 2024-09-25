@@ -1,8 +1,5 @@
 /*
- * state.h
- *
- *  Created on: Jul 13, 2021
- *      Author: Mohamed_ELkomy
+ * wael hassan
  */
 
 #ifndef STATE_H_

@@ -1,8 +1,5 @@
 /*
- * main.c
- *
- *  Created on: Jul 13, 2021
- *      Author: Mohamed_ELkomy
+ * wael hassan
  */
 
 #include"CA.h"
