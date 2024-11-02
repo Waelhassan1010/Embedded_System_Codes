@@ -1,0 +1,1 @@
+in this lab we have to create a baremetal software to send a command using UART
