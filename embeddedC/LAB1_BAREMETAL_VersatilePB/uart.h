@@ -1,7 +1,5 @@
-#ifndef _UART_H
-#define _UART_H
-#include"Platform_Types.h"
-
-void UART_SEND_STRING(unsigned char* P_tx_string);
+#ifndef UART_H_
+#define UART_H_
+void uart_send_string(unsigned char* ptr);
 
 #endif
