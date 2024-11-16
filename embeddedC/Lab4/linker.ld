@@ -9,13 +9,19 @@ SECTIONS
 	.text : {
 	  *(.vectors*)
 	  *(.text*)
+	  _E_text = .;
 	}>flash
 
 	.data :{
+	  _S_data = .;
 	  *(.data*)
-	}>flash
+	  _E_data = .;
+	}>sram AT> flash
 
 	.bss :{
+	  _S_bss = . ;
 	  *(.bss*)
+	  _E_bss = .;
+	  _stack_top = . +0x1000;
 	}>sram
 }
