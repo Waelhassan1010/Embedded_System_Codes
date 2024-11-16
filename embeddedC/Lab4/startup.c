@@ -5,7 +5,7 @@ extern uint32_t _S_data;
 extern uint32_t _E_data;
 extern uint32_t _S_bss;
 extern uint32_t _E_bss;
-extern uint32_t _stack_top;
+
 
 extern void main();
 
@@ -39,11 +39,14 @@ void nmi_handler() __attribute__((weak,alias("default_handler")));
 void h_fault_handler() __attribute__((weak,alias("default_handler")));
 void bus_fault() __attribute__((weak,alias("default_handler")));
 
-uint32_t vectors[] __attribute__((section(".vectors"))) ={
-	(uint32_t) &_stack_top,
-	(uint32_t) &reset_handler,
-	(uint32_t) &nmi_handler,
-	(uint32_t) &h_fault_handler,
-	(uint32_t) &bus_fault,
-};
+
+static unsigned long stack_top [256]; 
+void (* const g_vector [])() __attribute__((section(".vectors"))) =
+   {
+   	(void(*)()) (unsigned long) &stack_top [256],
+   	&reset_handler,
+	&nmi_handler,
+    &h_fault_handler,
+    &bus_fault
+   };
 

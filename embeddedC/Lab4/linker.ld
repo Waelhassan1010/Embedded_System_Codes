@@ -1,7 +1,7 @@
 MEMORY
 {
-	flash(rx) : o = 0X08000000, l = 128M
-	sram(rwx):  o = 0X20000000, l = 20K
+	flash(rx) : o = 0X00000000, l = 512M
+	sram(rwx):  o = 0X20000000, l = 512M
 }
 
 SECTIONS
